@@ -114,7 +114,7 @@ For example, the following code will generate synthetic data generation code fro
 
    import dbldatagen as dg
 
-   dfSource = spark.read.format("parquet").load("/tmp/your/source/dataset")
+   df_source_data = spark.read.format("parquet").load("/tmp/your/source/dataset")
 
    analyzer = dg.DataAnalyzer(sparkSession=spark, df=df_source_data)
 
